@@ -6,143 +6,130 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Form</h1>
-    <hr>
+    <header>
+        <h1>Form</h1>
+    </header>
 
-    <form action="#" method="post">
-        <fieldset id="personal-data">
-            <legend>Personal data</legend>
+    <main>
+        <form action="#" method="post">
+            <fieldset id="personal-data">
+                <legend>Personal data</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" required min="12" max="100">
+                </div>
+                <div>
+                    <label for="birth">Date of birth</label>
+                    <input type="date" name="birth" id="birth">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="number">Phone number</label>
+                    <input type="tel" name="number" id="number" maxlength="11" placeholder="(00)123456789">
+                </div>
+                <div>
+                    <label for="photo">Upload photo</label>
+                    <input type="file" name="photo" id="photo">
+                </div>
+            </fieldset>
+            <fieldset id="profile">
+                <legend>Profile</legend>
+                <div>
+                    <label for="gender">Gender</label> <br>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male">
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">
+                        Female
+                    </label>
+                    <label for="others">
+                        <input type="radio" name="gender" id="others" value="others">
+                        Others
+                    </label>
+                </div>
+                <div>
+                    <label for="marital-status">Marital status</label>
+                    <select name="marital-status" id="marital-status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widower">Widower</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+            </fieldset>
+            <fieldset id="habits">
+                <legend>Habits</legend>
+                <div>
+                    <label for="social-medias">Social medias</label> <br>
+                    <label for="facebook">
+                        <input type="checkbox" name="social-medias" id="facebook" value="facebook">
+                        Facebook
+                    </label>
+                    <label for="linkedin">
+                        <input type="checkbox" name="social-medias" id="linkedin" value="linkedin">
+                        Linkedin
+                    </label>
+                    <label for="instagram">
+                        <input type="checkbox" name="social-medias" id="instagram" value="instagram">
+                        Instagram
+                    </label>
+                    <label for="github">
+                        <input type="checkbox" name="social-medias" id="github" value="github">
+                        GitHub
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </main>
 
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" required>
-            </div>
-
-            <div>
-                <label for="age">Age</label>
-                <input type="number" name="age" id="age" required min="12" max="100">
-            </div>
-
-            <div>
-                <label for="birth">Date of birth</label>
-                <input type="date" name="birth" id="birth">
-            </div>
-
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <div>
-                <label for="number">Phone number</label>
-                <input type="tel" name="number" id="number" maxlength="11" placeholder="(00)123456789">
-            </div>
-
-            <div>
-                <label for="photo">Upload photo</label>
-                <input type="file" name="photo" id="photo">
-            </div>
-        </fieldset>
-
-        <fieldset id="profile">
-            <legend>Profile</legend>
-
-            <div>
-                <label for="gender">Gender</label> <br>
-
-                <label for="male">
-                    <input type="radio" name="gender" id="male" value="male">
-                    Male
-                </label>
-
-                <label for="female">
-                    <input type="radio" name="gender" id="female" value="female">
-                    Female
-                </label>
-
-                <label for="others">
-                    <input type="radio" name="gender" id="others" value="others">
-                    Others
-                </label>
-            </div>
-
-            <div>
-                <label for="marital-status">Marital status</label>
-                <select name="marital-status" id="marital-status">
-                    <option value="single">Single</option>
-                    <option value="married">Married</option>
-                    <option value="divorced">Divorced</option>
-                    <option value="widower">Widower</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="state">State</label>
-                <select name="state" id="state">
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM">AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MT">MT</option>
-                    <option value="MS">MS</option>
-                    <option value="MG">MG</option>
-                    <option value="PA">PA</option>
-                    <option value="PB">PB</option>
-                    <option value="PR">PR</option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="RJ">RJ</option>
-                    <option value="RN">RN</option>
-                    <option value="RS">RS</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="SC">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SE">SE</option>
-                    <option value="TO">TO</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="city">City</label>
-                <input type="text" name="city" id="city">
-            </div>
-        </fieldset>
-
-        <fieldset id="habits">
-            <legend>Habits</legend>
-
-            <div>
-                <label for="social-medias">Social medias</label> <br>
-
-                <label for="facebook">
-                    <input type="checkbox" name="social-medias" id="facebook" value="facebook">
-                    Facebook
-                </label>
-
-                <label for="linkedin">
-                    <input type="checkbox" name="social-medias" id="linkedin" value="linkedin">
-                    Linkedin
-                </label>
-
-                <label for="instagram">
-                    <input type="checkbox" name="social-medias" id="instagram" value="instagram">
-                    Instagram
-                </label>
-
-                <label for="github">
-                    <input type="checkbox" name="social-medias" id="github" value="github">
-                    GitHub
-                </label>
-            </div>
-        </fieldset>
-    </form>
+    <footer>
+        <p>&copy; 2026 Belkman TI. All rights reserved.</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
