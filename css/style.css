@@ -1,2 +1,75 @@
 @charset "UTF-8";
 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    margin: 15px;
+}
+
+main {
+    margin: 15px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+fieldset div {
+    margin-bottom: 5px;
+}
+
+div#social-medias label {
+    display: block;
+}
+
+div#satisfaction-level label {
+    display: block;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="date"], input[type="tel"] {
+    height: 1.5rem;
+    padding-left: 3px;
+}
+
+textarea {
+    padding-left: 3px;
+}
+
+div#div-lgpd {
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 0 20px 0 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
