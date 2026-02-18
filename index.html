@@ -13,7 +13,7 @@
 
     <main>
         <form action="" method="get">
-            <fieldset id="personal-data">
+                <fieldset id="personal-data"> <!-- PERSONAL DATA -->
                 <legend>Personal data</legend>
                 <div>
                     <label for="name">Complete name:</label>
@@ -32,16 +32,16 @@
                     <input type="email" name="email" id="email" required>
                 </div>
                 <div>
-                    <label for="number">Phone number:</label>
-                    <input type="tel" name="number" id="number" maxlength="11" placeholder="(00)123456789">
+                    <label for="phone-number">Phone number:</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="(00)123456789" pattern="[0-9]{11}">
                 </div>
                 <div>
                     <label for="photo">Upload photo:</label>
-                    <input type="file" name="photo" id="photo">
+                    <input type="file" accept="image/*" name="photo" id="photo">
                 </div>
             </fieldset>
 
-            <fieldset id="profile">
+            <fieldset id="profile"> <!-- PROFILE -->
                 <legend>Profile</legend>
                 <div>
                     <label for="gender">Gender:</label>
@@ -106,7 +106,7 @@
                 </div>
             </fieldset>
 
-            <fieldset id="habits">
+            <fieldset id="habits"> <!-- HABITS -->
                 <legend>Habits</legend>
                 <div id="social-medias">
                     <label for="social-medias">Social medias:</label>
@@ -144,7 +144,7 @@
                 </div>
             </fieldset>
 
-            <fieldset id="opinion">
+            <fieldset id="opinion"> <!-- OPINION -->
                 <legend>Opinion</legend>
                 <div id="satisfaction-level">
                     <label for="satisfaction-level">Level of satisfaction:</label>
@@ -168,7 +168,7 @@
                 </div>
             </fieldset>
 
-            <div id="div-lgpd">
+            <div id="div-lgpd"> <!-- CONSENT AND RESULTS -->
                 <label for="LGPD">
                     <input type="checkbox" name="LGPD" id="LGPD" value="accepted" required>
                     I have read and agree to the privacy policies.
@@ -179,7 +179,7 @@
                 </label>
             </div>
 
-            <div>
+            <div> <!-- BUTTONS -->
                 <button type="submit">Send</button>
                 <button type="reset">Reset</button>
             </div>
