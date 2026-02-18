@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,38 +12,40 @@
     </header>
 
     <main>
-        <form action="#" method="post">
+        <form action="" method="get">
             <fieldset id="personal-data">
                 <legend>Personal data</legend>
                 <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <label for="name">Complete name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div>
-                    <label for="age">Age</label>
+                    <label for="age">Age:</label>
                     <input type="number" name="age" id="age" required min="12" max="100">
                 </div>
                 <div>
-                    <label for="birth">Date of birth</label>
+                    <label for="birth">Date of birth:</label>
                     <input type="date" name="birth" id="birth">
                 </div>
                 <div>
-                    <label for="email">E-mail</label>
+                    <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" required>
                 </div>
                 <div>
-                    <label for="number">Phone number</label>
+                    <label for="number">Phone number:</label>
                     <input type="tel" name="number" id="number" maxlength="11" placeholder="(00)123456789">
                 </div>
                 <div>
-                    <label for="photo">Upload photo</label>
+                    <label for="photo">Upload photo:</label>
                     <input type="file" name="photo" id="photo">
                 </div>
             </fieldset>
+
             <fieldset id="profile">
                 <legend>Profile</legend>
                 <div>
-                    <label for="gender">Gender</label> <br>
+                    <label for="gender">Gender:</label>
+                    
                     <label for="male">
                         <input type="radio" name="gender" id="male" value="male">
                         Male
@@ -57,7 +60,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for="marital-status">Marital status</label>
+                    <label for="marital-status">Marital status:</label>
                     <select name="marital-status" id="marital-status">
                         <option value="single">Single</option>
                         <option value="married">Married</option>
@@ -66,7 +69,7 @@
                     </select>
                 </div>
                 <div>
-                    <label for="state">State</label>
+                    <label for="state">State:</label>
                     <select name="state" id="state">
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
@@ -98,14 +101,15 @@
                     </select>
                 </div>
                 <div>
-                    <label for="city">City</label>
+                    <label for="city">City:</label>
                     <input type="text" name="city" id="city">
                 </div>
             </fieldset>
+
             <fieldset id="habits">
                 <legend>Habits</legend>
-                <div>
-                    <label for="social-medias">Social medias</label> <br>
+                <div id="social-medias">
+                    <label for="social-medias">Social medias:</label>
                     <label for="facebook">
                         <input type="checkbox" name="social-medias" id="facebook" value="facebook">
                         Facebook
@@ -123,7 +127,62 @@
                         GitHub
                     </label>
                 </div>
+                <div>
+                    <label for="musical-style">Musical style:</label>
+                    <input type="text" name="musical-style" id="musical-style" list="styles">
+                    <datalist id="styles">
+                        <option value="Rock"></option>
+                        <option value="Pop"></option>
+                        <option value="Jazz"></option>
+                        <option value="Hip-Hop"></option>
+                        <option value="Country"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="favorite-color">Favorite color:</label>
+                    <input type="color" name="favorite-color" id="favorite-color">
+                </div>
             </fieldset>
+
+            <fieldset id="opinion">
+                <legend>Opinion</legend>
+                <div id="satisfaction-level">
+                    <label for="satisfaction-level">Level of satisfaction:</label>
+                    
+                    <label for="very-satisfied">
+                        <input type="radio" name="satisfaction-level" id="very-satisfied" value="very-satisfied">
+                        Very satisfied
+                    </label>
+                    <label for="satisfied">
+                        <input type="radio" name="satisfaction-level" id="satisfied" value="satisfied">
+                        Satisfied
+                    </label>
+                    <label for="dissatisfied">
+                        <input type="radio" name="satisfaction-level" id="dissatisfied" value="dissatisfied">
+                        Dissatisfied
+                    </label>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label> <br>
+                    <textarea name="comment" id="comment" rows="10" cols="50" maxlength="500" placeholder="Leave your comment..."></textarea>
+                </div>
+            </fieldset>
+
+            <div id="div-lgpd">
+                <label for="LGPD">
+                    <input type="checkbox" name="LGPD" id="LGPD" value="accepted" required>
+                    I have read and agree to the privacy policies.
+                </label> <br>
+                <label for="receive-results">
+                    <input type="checkbox" name="receive-results" id="receive-results" value="yes">
+                    Would you like to receive the results by email?
+                </label>
+            </div>
+
+            <div>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
         </form>
     </main>
 
