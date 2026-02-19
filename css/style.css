@@ -15,11 +15,6 @@ input, button, textarea, select {
     font: inherit;
 }
 
-img, picture, video, canvas {
-    max-width: 100%;
-    display: block;
-}
-
 html {
     font-size: 16px;
 }
@@ -27,14 +22,29 @@ html {
 body {
     font-family: var(--fontText);
     line-height: 1.5;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    margin: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+header h1 {
+    font-family: var(--fontTitle);
+    font-size: 2rem;
 }
 
 main {
-    margin: 15px;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 10px;
 }
 
 legend {
@@ -43,7 +53,16 @@ legend {
 }
 
 fieldset {
-    padding: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    margin-bottom: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.171);
+    border-radius: 7px;
+    width: 100%;
+}
+
+fieldset#personal-data {
+    
 }
 
 fieldset div {
@@ -58,9 +77,30 @@ div#satisfaction-level label {
     display: block;
 }
 
+div#uploadPhoto {
+    margin-top: 15px;
+}
+
 input[type="text"], input[type="number"], input[type="email"], input[type="date"], input[type="tel"] {
     height: 1.5rem;
-    padding-left: 3px;
+    padding: 0 5px;
+    width: 100%;
+    border: 0.1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 3.5px;
+}
+
+input[type="file"] {
+    width: 100%;
+}
+
+input:focus {
+    background-color: rgb(245, 245, 245);
+}
+
+label[for="name"]::after, label[for="age"]::after, label[for="email"]::after, label[for="LGPD"]::after {
+    content: " *";
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.719);
 }
 
 textarea {
@@ -72,14 +112,22 @@ div#div-lgpd {
 }
 
 button {
-    margin-top: 15px;
+    margin: 15px 5px 0 0;
     padding: 0 20px 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
 }
 
 footer {
     background-color: black;
     color: white;
     font-size: 0.8rem;
+    width: 100%;
     text-align: center;
+    margin-top: 30px;
 }
-
