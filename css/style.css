@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+    --fontTitle: "Fjalla One", sans-serif;
+    --fontText: "Work Sans", sans-serif;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -20,7 +25,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontText);
     line-height: 1.5;
 }
 
@@ -30,6 +35,11 @@ header {
 
 main {
     margin: 15px;
+}
+
+legend {
+    font-family: var(--fontTitle);
+    font-size: 1.5rem;
 }
 
 fieldset {
