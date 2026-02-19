@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Culturama</title>
 </head>
 <body>
     <header>
-        <h1>Form</h1>
+        <img src="img/logo.png" alt="Culturama's logo">
+        <h1>Customer Satisfaction</h1>
     </header>
 
     <main>
@@ -39,7 +40,7 @@
                     <label for="phone-number">Phone number:</label>
                     <input type="tel" name="phone-number" id="phone-number" placeholder="(00)123456789" pattern="[0-9]{11}">
                 </div>
-                <div>
+                <div id="uploadPhoto">
                     <label for="photo">Upload photo:</label>
                     <input type="file" accept="image/*" name="photo" id="photo">
                 </div>
@@ -99,8 +100,8 @@
                         <option value="RO">RO</option>
                         <option value="RR">RR</option>
                         <option value="SC">SC</option>
-                        <option value="SP">SP</option>
                         <option value="SE">SE</option>
+                        <option value="SP">SP</option>
                         <option value="TO">TO</option>
                     </select>
                 </div>
@@ -168,7 +169,7 @@
                 </div>
                 <div>
                     <label for="comment">Comment:</label> <br>
-                    <textarea name="comment" id="comment" rows="5" cols="50" maxlength="500" placeholder="Leave your comment..."></textarea>
+                    <textarea name="comment" id="comment" rows="5" cols="35" maxlength="500" placeholder="Leave your comment..."></textarea>
                 </div>
             </fieldset>
 
