@@ -9,9 +9,6 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:;">
     <link rel="stylesheet" href="css/style.css"> <!-- LINK TAGS -->
     <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Culturama</title> <!-- TITLE -->
 </head>
 <body>
@@ -26,7 +23,7 @@
                 <legend>Personal data</legend>
                 <div>
                     <label for="name">Complete name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required autocomplete="name">
                 </div>
                 <div>
                     <label for="age">Age:</label>
@@ -38,11 +35,11 @@
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required autocomplete="email">
                 </div>
                 <div>
                     <label for="phone-number">Phone number:</label>
-                    <input type="tel" name="phone-number" id="phone-number" placeholder="(00)123456789" pattern="[0-9]{11}">
+                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" placeholder="(00)123456789" pattern="[0-9]{11}">
                 </div>
                 <div id="uploadPhoto">
                     <label for="photo">Upload photo:</label>
@@ -53,7 +50,7 @@
             <fieldset id="profile"> <!-- PROFILE -->
                 <legend>Profile</legend>
                 <div>
-                    <label for="gender">Gender:</label>
+                    <p>Gender:</p>
                     
                     <label for="male">
                         <input type="radio" name="gender" id="male" value="male">
@@ -118,7 +115,8 @@
             <fieldset id="habits"> <!-- HABITS -->
                 <legend>Habits</legend>
                 <div id="social-medias">
-                    <label for="social-medias">Social medias:</label>
+                    <p>Social medias:</p>
+
                     <label for="facebook">
                         <input type="checkbox" name="social-medias" id="facebook" value="facebook">
                         Facebook
@@ -156,7 +154,7 @@
             <fieldset id="opinion"> <!-- OPINION -->
                 <legend>Opinion</legend>
                 <div id="satisfaction-level">
-                    <label for="satisfaction-level">Level of satisfaction:</label>
+                    <p>Level of satisfaction:</p>
                     
                     <label for="very-satisfied">
                         <input type="radio" name="satisfaction-level" id="very-satisfied" value="very-satisfied">
