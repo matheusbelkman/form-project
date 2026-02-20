@@ -77,6 +77,10 @@ div#uploadPhoto {
     margin-top: 15px;
 }
 
+fieldset div {
+    margin-bottom: 15px;
+}
+
 input[type="text"], input[type="number"], input[type="email"], input[type="date"], input[type="tel"] {
     height: 1.5rem;
     padding: 0 5px;
